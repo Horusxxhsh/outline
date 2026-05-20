@@ -7841,12 +7841,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.19.39":
-  version: 20.19.39
-  resolution: "@types/node@npm:20.19.39"
+"@types/node@npm:20.19.41":
+  version: 20.19.41
+  resolution: "@types/node@npm:20.19.41"
   dependencies:
     undici-types: "npm:~6.21.0"
-  checksum: 10c0/1d16da7b5f47a7415b827fcf3b94d279febf4c14671afec74a03e47856b5270023d9beb1b9aeab4d3b622fd97d61a60206cfc2cca588663181331bc592468289
+  checksum: 10c0/aa2a07317bbd700bea68d5784b403a738dbcebadbe2d8ef05649f7953065120d5d37f7edfdd7881df3a3bd15328c8a4dc46fdd69732ab540d552c505378c585b
   languageName: node
   linkType: hard
 
@@ -15910,7 +15910,7 @@ __metadata:
     "@types/markdown-it-emoji": "npm:^3.0.1"
     "@types/mime-types": "npm:^3.0.1"
     "@types/natural-sort": "npm:^0.0.24"
-    "@types/node": "npm:20.19.39"
+    "@types/node": "npm:20.19.41"
     "@types/node-fetch": "npm:^2.6.13"
     "@types/nodemailer": "npm:^6.4.23"
     "@types/pako": "npm:^2.0.4"
