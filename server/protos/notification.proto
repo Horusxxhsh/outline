@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package notification.v1;
+
+service NotificationService {
+  rpc SendMarkdown(SendMarkdownRequest) returns (SendMarkdownResponse);
+  rpc SendMarkdownToChannel(SendMarkdownToChannelRequest)
+    returns (SendMarkdownResponse);
+  rpc GetChannels(GetChannelsRequest) returns (GetChannelsResponse);
+}
+
+message SendMarkdownRequest {
+  string title = 1;
+  repeated string contents = 2;
+  int64 rate_limit_s = 3;
+}
+
+message SendMarkdownToChannelRequest {
+  string channel = 1;
+  string title = 2;
+  repeated string contents = 3;
+  int64 rate_limit_s = 4;
+}
+
+message SendMarkdownResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+message GetChannelsRequest {}
+
+message GetChannelsResponse {
+  int32 code = 1;
+  string message = 2;
+  repeated string channels = 3;
+}
