@@ -6,7 +6,7 @@ import webpackStats from "rollup-plugin-webpack-stats";
 import type { ServerOptions } from "vite";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
-import environment from "./server/utils/environment";
+import environment from "./server/utils/environment.ts";
 
 let httpsConfig: ServerOptions["https"] | undefined;
 let host: string | undefined;
